@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Services Ranking - Home</title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    html
+    {
+        scroll-behavior: smooth;
+    } 
+    body
+    {
+        margin: 0;
+        background-color:#141e30;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .header {
+      text-align: center;
+      font-size: 25px;
+      width: 100%;
+      overflow: auto;
+      position: fixed;
+      color: white;
+    }  
+    .login-box {
+        position: absolute;
+        margin-top: 300px;
+         margin-left: 50%;
+         width: 35%;
+         height:55%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+    } 
+    .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: black;
+        text-align: center;
+    }
+    #t1{
+      width: 100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    #r1{
+      background-color:black;
+      color:#fff;
+    } 
+    @media screen and (max-width: 600px) {
+      .login-box {
+        margin-top: 300px;
+        margin-left: 50%;
+        width: 300px;
+        
+      }
+    }
+   </style>
+</head>
+
+<body>
+<div class="header" id="head">
+  <br><h1>Welcome to Web Services Ranking!</h1>
+</div><br><br><br><br>
+
+<div class="login-box">
+  <h2>Upload the Throughput and Response Time values for 5 web services</h2>
+  <form method=post enctype=multipart/form-data>
+    <p><input type=file name=file> 
+    <p><input type=file name=file1>   
+    <p><input type=file name=file2>
+    <p><input type=file name=file3>
+    <p><input type=file name=file4><br><br><br>
+    
+    <input type=submit value=Upload>
+</form>
+</div>
+
+
+</body>
+</html>
